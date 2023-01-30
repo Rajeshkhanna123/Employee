@@ -16,4 +16,7 @@ public interface EmpRepository extends JpaRepository<Employee,Integer> {
 
     @Transactional
     Double deleteByPno(Double pno);
+
+    @Transactional
+    Integer deleteById(int id);
 }

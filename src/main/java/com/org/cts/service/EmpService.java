@@ -12,5 +12,7 @@ public interface EmpService {
     public Employee findEmployeeById(int id);
     public String deleteByAddress(String address);
     public Double deleteByPno(Double pno);
+    public Integer deleteById(int id);
+
 
 }

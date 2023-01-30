@@ -51,5 +51,11 @@ public class ServiceImpl implements EmpService{
         return d;
     }
 
+    @Override
+    public Integer deleteById(int id) {
+        Integer i = empRepository.deleteById(id);
+        return 0;
+    }
+
 
 }

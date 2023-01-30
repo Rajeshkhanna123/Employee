@@ -48,5 +48,11 @@ public class EmpController {
         return dd;
     }
 
+    @DeleteMapping("deleteById/{id}")
+    public Integer deleteById(@PathVariable int id){
+        Integer ii = empService.deleteById(id);
+        return ii;
+    }
+
 
 }
